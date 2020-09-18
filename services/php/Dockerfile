@@ -120,13 +120,13 @@ RUN \
     # for redis
     && pecl install redis-4.0.1 && docker-php-ext-enable redis \
 
-    # for imagick require PHP version 7.2
+    # for imagick require PHP version 7.4
     && pecl install imagick && docker-php-ext-enable imagick \
 
-    # for memcached require PHP version 7.2
+    # for memcached require PHP version 7.4
     && pecl install memcached && docker-php-ext-enable memcached \
 
-    # for mcrypt require PHP version 7.2
+    # for mcrypt require PHP version 7.4
     && pecl install mcrypt-1.0.2 && docker-php-ext-enable mcrypt \
 
     # for mongodb 7.2
@@ -177,7 +177,7 @@ RUN \
 RUN curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=/bin
 ENV PATH /root/.composer/vendor/bin:$PATH
 
-# install phpunit require PHP version 7.2 or later
+# install phpunit require PHP version 7.4 or later
 RUN curl https://phar.phpunit.de/phpunit.phar -L > phpunit.phar \
     && chmod +x phpunit.phar \
     && mv phpunit.phar /usr/local/bin/phpunit \
