@@ -151,11 +151,11 @@ RUN \
     && docker-php-ext-install $mc opcache \
 
     # for xdebug php7.0
-    && curl -fsSL 'https://pecl.php.net/get/xdebug-2.6.1.tgz' -o xdebug-2.6.1.tgz \
-    && mkdir xdebug \
-    && tar -xf xdebug-2.6.1.tgz -C xdebug --strip-components=1 \
-    && ( cd xdebug && phpize && ./configure && make $mc && make install ) \
-    && docker-php-ext-enable xdebug \
+#    && curl -fsSL 'https://pecl.php.net/get/xdebug-2.9.7.tgz' -o xdebug-2.9.7.tgz \
+#    && mkdir xdebug \
+#    && tar -xf xdebug-2.9.7.tgz -C xdebug --strip-components=1 \
+#    && ( cd xdebug && phpize && ./configure && make $mc && make install ) \
+#    && docker-php-ext-enable xdebug \
 
     # swoole require PHP version 7.0 or later.
     && curl -fsSL 'https://pecl.php.net/get/swoole-4.4.3.tgz' -o swoole-4.4.3.tgz \
