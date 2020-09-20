@@ -178,7 +178,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --filename=composer --in
 ENV PATH /root/.composer/vendor/bin:$PATH
 
 # install phpunit require PHP version 7.2 or later
-RUN curl https://phar.phpunit.de/phpunit.phar -L > phpunit.phar \
-    && chmod +x phpunit.phar \
-    && mv phpunit.phar /usr/local/bin/phpunit \
-    && phpunit --version
+#RUN curl https://phar.phpunit.de/phpunit.phar -L > phpunit.phar \
+#    && chmod +x phpunit.phar \
+#    && mv phpunit.phar /usr/local/bin/phpunit \
+#    && phpunit --version
