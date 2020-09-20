@@ -118,7 +118,7 @@ RUN \
     # Install PECL extensions
 
     # for redis
-    && pecl install redis-4.0.1 && docker-php-ext-enable redis \
+    && pecl install redis-5.3.1 && echo "install redis!!!!!!" && docker-php-ext-enable redis \
 
     # for imagick require PHP version 7.4
     && pecl install imagick && docker-php-ext-enable imagick \
