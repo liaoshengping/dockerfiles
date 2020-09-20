@@ -1,4 +1,4 @@
-FROM php:7.4
+FROM php:7.4-fpm
 LABEL maintainer="dev@chialab.io"
 
 # Download script to install PHP extensions and dependencies
