@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d9262e5-2d65-4dd6-b862-bef7c4dfc8f0" name="Default Changelist" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php71/Dockerfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/php56/Dockerfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,11 +45,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php71/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="142" column="0" lean-forward="true" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+            <state relative-caret-position="586">
+              <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="145" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php56/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="706">
+              <caret line="185" column="41" lean-forward="false" selection-start-line="185" selection-start-column="41" selection-end-line="185" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -61,9 +71,11 @@
     <findStrings>
       <find>140.82.114.4</find>
       <find>xdebug</find>
+      <find>PHP 7.2</find>
     </findStrings>
     <replaceStrings>
       <replace>version 7.4</replace>
+      <replace>PHP 7.1</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -77,6 +89,7 @@
         <option value="$PROJECT_DIR$/php74/Dockerfile" />
         <option value="$PROJECT_DIR$/php72/Dockerfile" />
         <option value="$PROJECT_DIR$/php71/Dockerfile" />
+        <option value="$PROJECT_DIR$/php56/Dockerfile" />
       </list>
     </option>
   </component>
@@ -119,6 +132,34 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dockerfiles" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dockerfiles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dockerfiles" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php71" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dockerfiles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dockerfiles" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php56" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -232,12 +273,12 @@
       <updated>1600429913960</updated>
       <workItem from="1600429915189" duration="3116000" />
       <workItem from="1600506849351" duration="1163000" />
-      <workItem from="1600508678270" duration="5532000" />
+      <workItem from="1600508678270" duration="6301000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9811000" />
+    <option name="totallyTimeSpent" value="10580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="0" width="2412" height="1311" extended-state="0" />
@@ -334,8 +375,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php71/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="142" column="0" lean-forward="true" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+        <state relative-caret-position="586">
+          <caret line="144" column="0" lean-forward="false" selection-start-line="144" selection-start-column="0" selection-end-line="145" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php56/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="185" column="41" lean-forward="false" selection-start-line="185" selection-start-column="41" selection-end-line="185" selection-end-column="41" />
           <folding />
         </state>
       </provider>
