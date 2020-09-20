@@ -29,7 +29,12 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -q \
       soap \
       xsl \
       zip \
-      sockets
+      sockets\
+      swoole\
+      yaf\
+      memcached\
+      mongodb\
+      mcrypt
 # already installed:
 #      iconv \
 #      mbstring \
