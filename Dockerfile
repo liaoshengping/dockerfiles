@@ -151,9 +151,9 @@ RUN \
     && docker-php-ext-install $mc opcache \
 
     # for xdebug php7.0
-    && curl -fsSL 'https://pecl.php.net/get/xdebug-2.6.1.tgz' -o xdebug-2.6.1.tgz \
+    && curl -fsSL 'https://pecl.php.net/get/xdebug-2.9.7.tgz' -o xdebug-2.9.7.tgz \
     && mkdir xdebug \
-    && tar -xf xdebug-2.6.1.tgz -C xdebug --strip-components=1 \
+    && tar -xf xdebug-2.9.7.tgz -C xdebug --strip-components=1 \
     && ( cd xdebug && phpize && ./configure && make $mc && make install ) \
     && docker-php-ext-enable xdebug \
 
