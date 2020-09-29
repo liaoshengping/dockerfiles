@@ -1,6 +1,10 @@
 FROM php:7.4-fpm
 LABEL maintainer="dev@chialab.io"
 
+#设置时区
+ENV TZ=Asia/Shanghai
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 # Download script to install PHP extensions and dependencies
 ADD https://raw.githubusercontent.com/mlocati/docker-php-extension-installer/master/install-php-extensions /usr/local/bin/
 
