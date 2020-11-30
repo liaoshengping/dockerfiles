@@ -35,8 +35,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -q \
       zip \
       sockets\
       memcached\
-      mongodb\
-
+      mongodb
 # already installed:
 #      iconv \
 #      mbstring \
