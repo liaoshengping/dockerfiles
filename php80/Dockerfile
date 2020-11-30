@@ -34,8 +34,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -q \
       xsl \
       zip \
       sockets\
-      swoole\
-      yaf\
       memcached\
       mongodb\
       mcrypt
