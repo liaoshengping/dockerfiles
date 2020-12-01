@@ -48,4 +48,4 @@ ENV PATH=$PATH:/root/composer/vendor/bin COMPOSER_ALLOW_SUPERUSER=1
 # Install prestissimo (composer plugin). Plugin that downloads packages in parallel to speed up the installation process
 # After release of Composer 2.x, remove prestissimo, because parallelism already merged into Composer 2.x branch:
 # https://github.com/composer/composer/pull/7904
-RUN composer global require hirak/prestissimo
+#RUN composer global require hirak/prestissimo
