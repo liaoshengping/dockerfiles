@@ -35,7 +35,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -q \
       zip \
       sockets\
       memcached\
-      swoole\
       mongodb
 # already installed:
 #      iconv \
