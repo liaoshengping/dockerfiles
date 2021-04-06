@@ -1,4 +1,4 @@
-FROM devilbox/php-fpm-8.1:latest
+FROM php:8.1-fpm
 LABEL maintainer="dev@chialab.io"
 
 #设置时区
