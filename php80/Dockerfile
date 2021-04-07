@@ -9,7 +9,7 @@ ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/do
 
 # Download script to install PHP extensions and dependencies
 RUN chmod +x /usr/local/bin/install-php-extensions && sync && \
-    install-php-extensions gd xdebug swoole
+    install-php-extensions gd xdebug swoole bcmath gd
 #      mongodb
 # already installed:
 #      iconv \
