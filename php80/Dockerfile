@@ -7,9 +7,23 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 
+
+RUN chmod uga+x /usr/local/bin/install-php-extensions && sync
+
 # Download script to install PHP extensions and dependencies
-RUN chmod +x /usr/local/bin/install-php-extensions && sync && \
-    install-php-extensions gd xdebug swoole bcmath gd
+RUN DEBIAN_FRONTEND=noninteractive apt-get update -q \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -qq -y \
+      curl \
+      git \
+      zip unzip \
+    && install-php-extensions \
+        bcmath \
+        bz2 \
+        calendar \
+        exif \
+        gd \
+        swoole\
+        redis\
 #      mongodb
 # already installed:
 #      iconv \
