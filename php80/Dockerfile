@@ -1,4 +1,4 @@
-FROM php:8.1-fpm
+FROM php:8.0.3-fpm-alpine3.13
 LABEL maintainer="dev@chialab.io"
 
 #设置时区
