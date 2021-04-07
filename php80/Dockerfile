@@ -10,12 +10,7 @@ ADD https://raw.githubusercontent.com/mlocati/docker-php-extension-installer/mas
 
 RUN chmod uga+x /usr/local/bin/install-php-extensions && sync
 
-RUN DEBIAN_FRONTEND=noninteractive apt-get update -q \
-    && DEBIAN_FRONTEND=noninteractive apt-get install -qq -y \
-      curl \
-      git \
-      zip unzip \
-    && install-php-extensions \
+RUN install-php-extensions \
       bcmath \
       bz2 \
       calendar \
@@ -35,7 +30,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -q \
       zip \
       sockets\
       swoole\
-      memcached\
+      memcached
 #      mongodb
 # already installed:
 #      iconv \
