@@ -1,4 +1,4 @@
-FROM php:8.0.3-fpm-alpine3.13
+FROM adhocore/phpfpm:8.0
 LABEL maintainer="dev@chialab.io"
 
 #设置时区
