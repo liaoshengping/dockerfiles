@@ -38,7 +38,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -q \
       yaf\
       memcached\
       mongodb\
-      mcrypt
+      mcrypt\
+      yaconf\
 # already installed:
 #      iconv \
 #      mbstring \
